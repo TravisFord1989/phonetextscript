@@ -11,7 +11,7 @@ def send_messages(leads, client, message_text, failed_log_path):
             try:
                 message = client.messages.create(
                     to=phone_number,
-                    from_="+18336603784",  # Replace with your Twilio phone number
+                    from_="yournumber",  # Replace with your Twilio phone number
                     body=message_text
                 )
                 print(f"Message sent to {name} at {phone_number}")
@@ -26,8 +26,8 @@ def send_messages(leads, client, message_text, failed_log_path):
 def main():
     leads_csv = r'C:\Users\Travi\PycharmProjects\phonetextscript\Leads.csv'  # Replace with your CSV file path
     failed_log_path = 'failed_messages.txt'  # Path to log file for failed messages
-    account_sid = 'AC9e9ee521a8ee615ca548e3dc43bac6af'
-    auth_token = '0423af454d62217d8b41ab65edbe1691'
+    account_sid = ''
+    auth_token = ''
 
     try:
         # Load leads from CSV
