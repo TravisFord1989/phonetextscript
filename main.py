@@ -50,7 +50,7 @@ def main():
         return
 
     # Sending messages
-    message_text = "Hey, This is Travis, I am a representative working through your local union. I hope this message finds you well. I'm reaching out to let you know that I'll be in contact later this week to discuss your union benefits. If you'd prefer to schedule a specific time for our conversation, please feel free to text me back at 918-844-5080 with a time that works best for you. Thank you, and I'm looking forward to speaking with you. Wishing you a wonderful day!"
+    message_text = "!"
     send_messages(leads, client, message_text, failed_log_path)
 
     print("All messages attempted. Check 'failed_messages.txt' for any failures.")
