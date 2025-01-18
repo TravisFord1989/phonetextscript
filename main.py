@@ -24,7 +24,7 @@ def send_messages(leads, client, message_text, failed_log_path):
                 print(f"General error when sending to {name} at {phone_number}: {e}")
 
 def main():
-    leads_csv = r'C:\Users\Travi\PycharmProjects\phonetextscript\Leads.csv'  # Replace with your CSV file path
+    leads_csv = r'c:\YOURFILE'  # Replace with your CSV file path
     failed_log_path = 'failed_messages.txt'  # Path to log file for failed messages
     account_sid = ''
     auth_token = ''
